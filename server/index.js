@@ -12,7 +12,7 @@ const db = mysql.createPool({
 
 server.use(express.json());
 server.use(cors());
-
+//register
 server.post("/register", (req, res) => {
     const { name } = req.body;
     const { cost } = req.body;
